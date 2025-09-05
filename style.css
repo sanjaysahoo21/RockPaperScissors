@@ -1,0 +1,45 @@
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .img {
+            height: 100px;
+        }
+        .move {
+            width: 120px;
+            height: 120px;
+            background-color: transparent;
+            border: none;
+            border: 2px solid white;
+            border-radius: 100px;
+        }
+        .scissors {
+            background-color: rgb(44, 43, 43);
+            overflow: hidden;
+        }
+        .moves,.result,.score {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .moves-img {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(44, 43, 43);
+        }
+        .reset {
+            padding: 10px 15px;
+            font-size: 15px;
+            border-radius: 20px;
+        }
