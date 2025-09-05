@@ -61,7 +61,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {wins : 0,loses : 0,tie
             localStorage.setItem('score',JSON.stringify(score));
             updateScoreElement();
             document.querySelector('.js-result').innerHTML = `${result}`;
-            document.querySelector('.js-moves').innerHTML = `You <img class="img move moves-img" src="./images/${playermove}-img.png"/> - <img class="img move moves-img" src="./images/${computerRandom}-img.png"/> Computer`;
+            document.querySelector('.js-moves').innerHTML = `You <img class="img move moves-img" src="./assets/images/${playermove}-img.png"/> - <img class="img move moves-img" src="./assets/images/${computerRandom}-img.png"/> Computer`;
         }
         function updateScoreElement() {
             document.querySelector('.js-score').innerHTML = `Wins : ${score.wins}, Loses : ${score.loses}, ties : ${score.ties}`;
